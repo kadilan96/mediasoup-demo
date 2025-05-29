@@ -46,6 +46,11 @@ export default defineConfig({
     host,
     port,
     https,
+    hmr: {
+        protocol: 'wss',
+        host: process.env.MEDIASOUP_ANNOUNCED_ID || 'main.dien96.p-e.kr',
+        port: port,
+    },
   },
   resolve: {
     alias,
